@@ -35,7 +35,7 @@ user-edd.payne-sudoers:
     - create_dirs: True
     - dir_mode: 700
     - contents:
-      - edd.payne ALL=(ALL) NOPASSWD: ALL
+      edd.payne ALL=(ALL) NOPASSWD: ALL
     - require:
       - user: edd.payne
 
