@@ -1,5 +1,23 @@
 server {
   listen 80 default_server;
 
-  root /srv/html;
+  rewrite ^ https://$server_name$request_uri permanent;
 }
+
+server {
+  listen 443 default_server;
+  server_name puppypic;
+
+  location /api {
+    localhost:8080/
+  }
+
+  location / {
+  }
+
+  ssl on;
+  ssl_certificate ;
+  ssl_certificate_key ;
+  ssl_session_timeout 30m;
+}
+

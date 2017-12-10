@@ -30,7 +30,7 @@ user-{{ user }}-ssh-key:
 
 user-{{ user }}-sudoers:
   file.managed:
-    - name: /etc/sudoers.d/{{ user | replace(".","_" }}
+    - name: /etc/sudoers.d/{{ user | replace(".","_") }}
     - user: root
     - group: root
     - mode: 600
