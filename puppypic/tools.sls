@@ -8,7 +8,7 @@ puppypic-user:
   user.present:
     - name: puppypic
     - system: True
-    - group: puppypic
+    - gid: puppypic
     - home: /opt/puppypic
     - require:
       - group: puppypic
