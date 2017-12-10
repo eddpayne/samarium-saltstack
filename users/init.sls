@@ -17,7 +17,7 @@ user-edd.payne-ssh-key:
     - user: edd.payne
     - group: edd.payne
     - mode: 400
-    - create_dirs: True
+    - makedirs: True
     - dir_mode: 700
     - template: jinja
     - context:
