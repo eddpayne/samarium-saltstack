@@ -2,7 +2,7 @@ nginx:
   pkg.installed:
     - pkgs:
       - nginx
-  service.runnning:
+  service.running:
     - name: nginx
     - enable: True
     - watch:
