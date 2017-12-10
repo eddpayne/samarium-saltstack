@@ -28,7 +28,7 @@ user-edd.payne-ssh-key:
 
 user-edd.payne-sudoers:
   file.managed:
-    - name: /etc/sudoers.d/edd.payne
+    - name: /etc/sudoers.d/edd_payne
     - user: root
     - group: root
     - mode: 600
