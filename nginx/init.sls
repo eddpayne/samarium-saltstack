@@ -5,7 +5,8 @@ nginx-installation:
 
 nginx-service-running:
   service.runnning:
-    - nginx
+    - name:
+      - nginx
     - watch:
       - file: /etc/nginx/sites-available/puppypic
 
