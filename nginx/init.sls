@@ -1,9 +1,7 @@
-nginx-installation:
+nginx:
   pkg.installed:
     - pkgs:
       - nginx
-
-nginx-service-running:
   service.runnning:
     - name: nginx
     - enable: True
