@@ -16,7 +16,6 @@ puppypic-nginx-configuration:
   file.managed:
     - name: /etc/nginx/sites-available/puppypic
     - source: salt://nginx/files/puppypic-nginx-config
-      
 
 puppypic-nginx-enabled:
   file.symlink:
