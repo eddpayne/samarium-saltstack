@@ -22,7 +22,7 @@ user-{{ user }}-ssh-key:
     - dir_mode: 700
     - template: jinja
     - context:
-        sshkey: {{ salt['pillar.get']('users:'+user+':uid') }}
+        sshkey: {{ salt['pillar.get']('users:'+user+':sshkey') }}
     - source:
       - salt://users/files/authorized_keys.jinja
     - require:
