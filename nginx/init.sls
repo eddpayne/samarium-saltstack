@@ -1,3 +1,4 @@
 nginx-installation:
   pkg.installed:
-    - nginx
+    - pkgs:
+      - nginx
