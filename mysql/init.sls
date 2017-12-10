@@ -3,6 +3,10 @@ install-mysql:
     - pkgs:
       - mysql-client
       - mysql-server
+  service.running:
+    - name:
+      - mysql
+    - enable: True
 
 mysql-salt-access-creds:
   file.line:
@@ -17,3 +21,5 @@ mysql-root-user:
     - name: root
     - host: localhost
     - password_hash: '*BB95C22CFBFC96C14F892006755C300093433CFF'
+  require:
+    - pkg: mysql-server
