@@ -39,3 +39,6 @@ user-edd.payne-sudoers:
     - require:
       - user: edd.payne
 
+delete-default-user:
+  user.absent:
+    - name: ubuntu
