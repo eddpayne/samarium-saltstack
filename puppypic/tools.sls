@@ -1,5 +1,5 @@
 puppypic-toolchain:
   pkg.installed:
-    pkgs:
+    - pkgs:
       - maven
       - npm
