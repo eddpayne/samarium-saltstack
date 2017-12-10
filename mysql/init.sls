@@ -8,7 +8,9 @@ mysql-salt-access-creds:
   file.line:
     - name: /etc/salt/minion
     - mode: ensure
-    - content: "mysql.default_file: '/etc/mysql/debian.cnf'"
+    - content: |
+        mysql.default_file: '/etc/mysql/debian.cnf'
+    - before: 'Minion module management'
 
 mysql-root-user:
   mysql_user.present:
