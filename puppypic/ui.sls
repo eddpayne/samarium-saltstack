@@ -8,9 +8,3 @@ clone-puppypic-ui:
     - user: puppypic
     - require:
       - user: puppypic
-  npm.bootstrap:
-    - name: /opt/puppypic/ui
-    - require:
-      - user: puppypic
-    
-
